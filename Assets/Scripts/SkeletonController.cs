@@ -61,6 +61,11 @@ public class SkeletonController : MonoBehaviour
         anim.SetBool("attck", dist < 4);
     }
 
+    float GetEnemyDistance()
+    {
+        return Vector3.Distance(transform.position, enemy.position);
+    }
+
     void OnAnimatorMove()
     {
         // Update position to agent position
