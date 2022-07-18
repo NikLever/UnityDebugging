@@ -17,8 +17,11 @@ public class MoveCube : MonoBehaviour
 
         //Debug.LogFormat("The origin position is {0}. ", origin);
         //Debug.LogFormat("At Start transform.position={0}, transform.rotation={1}", transform.position, transform.rotation);
+        Debug.LogWarning("This is a warning message");
+        Debug.LogError("This is an error message");
+
         float theta = Mathf.Sin(1) + Mathf.PI;
-        Debug.LogFormat("pi = {0}", Mathf.PI);
+        //Debug.LogFormat("pi = {0}", Mathf.PI);
     }
 
     // Update is called once per frame
